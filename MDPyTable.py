@@ -17,10 +17,7 @@ def gettable(account,password):
 
     html = BeautifulSoup(result.text, 'html.parser')
 
-    all_sub = list()
-    all_tea = list()
-    all_room = list()
-    all_code = list()
+    all_sub,all_tea,all_room,all_code = list(),list(),list(),list()
 
     option = html.find('option', {'selected': True})
     sPeriodsem = option['value']
