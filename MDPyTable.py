@@ -50,8 +50,7 @@ def gettable(account,password):
             all_code.append("")
 
     table = {"day1":"","day2":"","day3":"","day4":"","day5":"","day6":""}
-    day = 0
-    index = 0
+    day,index = 0,0
 
     for day in range(6):
         subjDict = dict()
